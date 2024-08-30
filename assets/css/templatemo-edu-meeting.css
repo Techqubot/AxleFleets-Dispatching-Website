@@ -955,6 +955,7 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  width: 100%;
 }
 
 .meeting-item .thumb .price {
