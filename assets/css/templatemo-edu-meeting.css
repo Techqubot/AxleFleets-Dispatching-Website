@@ -944,19 +944,43 @@ section.upcoming-meetings .categories .main-button-red a {
   text-align: center;
 }
 
+/* Add space between the rows */
+.upcoming-meetings .row {
+  margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+/* Ensure the last row doesn't have extra space at the bottom */
+.upcoming-meetings .row:last-child {
+  margin-bottom: 0;
+}
+
+/* Existing styles */
 .meeting-item {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.meeting-item .down-content {
+  background-color: #fff;
+  padding: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .meeting-item .thumb {
   position: relative;
 }
 
-.meeting-item .thumb img {
+.meeting-item img {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  width: 100%;
 }
+
 
 .meeting-item .thumb .price {
   position: absolute;
