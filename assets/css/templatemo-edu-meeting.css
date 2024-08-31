@@ -158,7 +158,7 @@ body {
 .main-button-red a {
   font-size: 13px;
   color: #000000;
-  background-color: cyan;
+  background-color: #a12c2f;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -235,12 +235,12 @@ header
 }
 
 .sub-header .right-icons ul li a:hover {
-  color: #f5a425;
+  color: #a12c2f;
 }
 
 .sub-header .left-content p em {
    font-style: normal;
-   color: #f5a425;
+   color: #a12c2f;
 }
 
 .background-header {
@@ -271,7 +271,7 @@ header
 }
 
 .header-area {
-  background-color: rgba(250,250,250,0.15);
+  background-color: rgb(50, 53, 60);
   position: absolute;
   top: 40px;
   left: 0;
@@ -468,7 +468,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -477,7 +477,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -488,7 +488,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: #030303;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -1033,13 +1033,13 @@ section.apply-now {
 }
 
 section.apply-now .item {
-  background-color: rgba(250,250,250,0.15);
+  background-color: rgba(250, 250, 250, 0);
   padding: 40px;
   margin-bottom: 30px;
 }
 
 section.apply-now .item h3 {
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -1107,14 +1107,21 @@ courses
 --------------------------------------------- 
 */
 
+
+
+
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
+  background-color: #fff;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 130px;
+}
+.our-courses .section-heading h2{
+  text-align: center;
+  color:#191a20;
 }
 
 .our-courses .item .down-content {
@@ -1256,7 +1263,7 @@ our facts
 */
 
 section.our-facts {
-  background-image: url(../images/facts-bg.jpg);
+  background-image: url(../images/dryvan2.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1266,7 +1273,7 @@ section.our-facts {
 
 section.our-facts h2 {
   font-size: 38px;
-  color: #fff;
+  color: #ffffff;
   line-height: 50px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -1275,7 +1282,7 @@ section.our-facts h2 {
 
 .count-area-content {
   text-align: center;
-  background-color: rgba(250,250,250,0.15);
+  background-color:rgba(255, 255, 255, 0);
   border-radius: 20px;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
@@ -1288,14 +1295,14 @@ section.our-facts h2 {
 
 .count-digit {
     margin: 5px 0px;
-    color: #f5a425;
+    color: #a12c2f;
     font-weight: 700;
     font-size: 36px;
 }
 .count-title {
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
+    color: #f1f1f1;
     letter-spacing: 0.5px;
 }
 
