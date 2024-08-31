@@ -271,7 +271,7 @@ header
 }
 
 .header-area {
-  background-color: rgb(50, 53, 60);
+  background-color: rgba(50, 53, 60, 0.971);
   position: absolute;
   top: 40px;
   left: 0;
@@ -281,6 +281,8 @@ header
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+  opacity: 0;
+  animation: fadeIn 1000ms ease-in forwards;
 }
 
 .header-area .main-nav {
@@ -710,7 +712,16 @@ banner
     bottom: 0;
     right: 0;
     width: 100%;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
 }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .main-banner .caption {
   position: absolute;
@@ -729,22 +740,23 @@ banner
 
 .main-banner .caption h2 {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
 .main-banner .caption h2 em {
+  margin-bottom: 20px;
   font-style: normal;
-  color: #f5a425;
+  color: #ffffff;
   font-weight: 900;
 }
 
 .main-banner .caption p {
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   max-width: 570px;
 }
@@ -802,7 +814,7 @@ services
 }
 
 .services .item p {
-  color: #fff;
+  color: #ffffff;
   font-size: 13px;
 }
 
@@ -883,7 +895,7 @@ services
 
 /*
 ---------------------------------------------
-upcoming meetings
+TRUCK OPTIONS
 ---------------------------------------------
 */
 
@@ -902,7 +914,7 @@ section.upcoming-meetings .section-heading {
 }
 
 section.upcoming-meetings .categories {
-  background-color: #fff;
+  background-color: #fbfbfb;
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
@@ -920,6 +932,7 @@ section.upcoming-meetings .categories h4 {
 section.upcoming-meetings .categories ul li {
   display: inline-block;
   margin-bottom: 15px;
+  
 }
 
 section.upcoming-meetings .categories ul li a {
@@ -960,13 +973,16 @@ section.upcoming-meetings .categories .main-button-red a {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  opacity: 0.9;
+  
 }
 
 .meeting-item .down-content {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  margin-bottom: 15px;
 }
 
 .meeting-item .thumb {
@@ -979,6 +995,7 @@ section.upcoming-meetings .categories .main-button-red a {
   width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  
 }
 
 
@@ -992,7 +1009,7 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 16px;
   color: #1f272b;
   font-weight: 600;
-  background-color: rgba(250,250,250,0.9);
+  background-color: rgba(246, 244, 244, 0.9);
   padding: 7px 12px;
   border-radius: 10px;
 }
@@ -1015,7 +1032,7 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #a12c2f;
+  color: #db0007;
 }
 
 .meeting-item .down-content .date span {
@@ -1293,6 +1310,16 @@ section.our-facts {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 140px 0px 125px 0px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards; /* Scroll animation */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 section.our-facts h2 {
@@ -1302,14 +1329,27 @@ section.our-facts h2 {
   font-weight: 700;
   letter-spacing: 0.5px;
   margin-bottom: 50px;
+  transition: color 0.5s ease, transform 0.5s ease; /* Added transition */
+}
+
+section.our-facts h2:hover {
+  color: #a12c2f; /* Change color on hover */
+  transform: scale(1.05); /* Slightly scale up the text */
 }
 
 .count-area-content {
   text-align: center;
-  background-color:rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.644);
   border-radius: 20px;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.count-area-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .percentage .count-digit:after {
@@ -1318,21 +1358,53 @@ section.our-facts h2 {
 }
 
 .count-digit {
-    margin: 5px 0px;
-    color: #a12c2f;
-    font-weight: 700;
-    font-size: 36px;
+  margin: 5px 0px;
+  color: #a12c2f;
+  font-weight: 700;
+  font-size: 36px;
 }
+
 .count-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: #f1f1f1;
-    letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b2222;
+  letter-spacing: 0.5px;
 }
 
 .new-students {
   margin-top: 45px;
 }
+
+/* Add scroll reveal effect */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.count-area-content {
+  opacity: 0;
+  animation: reveal 1s ease-in-out forwards;
+}
+
+.count-area-content:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.count-area-content:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.count-area-content:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.count-area-content:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
 
 section.our-facts .video {
   text-align: center;
@@ -1803,7 +1875,7 @@ responsive
   .main-banner .caption h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 22px;
+    
   }
 
   .main-banner .caption .main-button-red {
