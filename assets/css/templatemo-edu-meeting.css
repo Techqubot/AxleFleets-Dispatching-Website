@@ -91,11 +91,11 @@ html, body {
 
 a {
   text-decoration: none !important;
-  color: #3CF;
+  color: rgb(249, 5, 5);
 }
 
 a:hover {
-	color: #FC3;
+	color: rgb(239, 13, 13);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1055,6 +1055,68 @@ section.upcoming-meetings .categories .main-button-red a {
   color: #1f272b;
   font-size: 14px;
 }
+
+/*
+---------------------------------------------
+Supported services
+---------------------------------------------
+*/
+
+/* Main Section Styles */
+section.company-services {
+  background-image: url(../images/meetings-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 110px;
+}
+
+
+
+section.company-services .heading {
+  text-align: center;
+}
+
+section.company-services .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  opacity: 0.9;
+}
+
+section.company-services .service-item .down-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+section.company-services .service-item .down-content h4 {
+  font-size: 18px;
+  color: #1f272b;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+section.company-services .service-item .down-content p {
+  color: #1f272b;
+  font-size: 14px;
+}
+
+/* Add space between the rows */
+.company-services .row {
+  margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+/* Ensure the last row doesn't have extra space at the bottom */
+.company-services .row:last-child {
+  margin-bottom: 0;
+}
+
 
 
 
